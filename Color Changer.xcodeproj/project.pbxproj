@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CBA86C33216FC4FE00501D2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA86C32216FC4FE00501D2C /* AppDelegate.swift */; };
-		CBA86C35216FC4FE00501D2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA86C34216FC4FE00501D2C /* ViewController.swift */; };
+		CBA86C35216FC4FE00501D2C /* ColorChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA86C34216FC4FE00501D2C /* ColorChangeViewController.swift */; };
 		CBA86C38216FC4FE00501D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA86C36216FC4FE00501D2C /* Main.storyboard */; };
 		CBA86C3A216FC4FE00501D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA86C39216FC4FE00501D2C /* Assets.xcassets */; };
 		CBA86C3D216FC4FE00501D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA86C3B216FC4FE00501D2C /* LaunchScreen.storyboard */; };
+		CBA86C4A216FC5D300501D2C /* ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA86C49216FC5D300501D2C /* ColorTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CBA86C2F216FC4FE00501D2C /* SecondIOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondIOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA86C2F216FC4FE00501D2C /* Color Changer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Changer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA86C32216FC4FE00501D2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBA86C34216FC4FE00501D2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBA86C34216FC4FE00501D2C /* ColorChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeViewController.swift; sourceTree = "<group>"; };
 		CBA86C37216FC4FE00501D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBA86C39216FC4FE00501D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBA86C3C216FC4FE00501D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBA86C3E216FC4FE00501D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA86C49216FC5D300501D2C /* ColorTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 		CBA86C30216FC4FE00501D2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBA86C2F216FC4FE00501D2C /* SecondIOSProject.app */,
+				CBA86C2F216FC4FE00501D2C /* Color Changer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,22 +56,55 @@
 		CBA86C31216FC4FE00501D2C /* SecondIOSProject */ = {
 			isa = PBXGroup;
 			children = (
-				CBA86C32216FC4FE00501D2C /* AppDelegate.swift */,
-				CBA86C34216FC4FE00501D2C /* ViewController.swift */,
-				CBA86C36216FC4FE00501D2C /* Main.storyboard */,
-				CBA86C39216FC4FE00501D2C /* Assets.xcassets */,
-				CBA86C3B216FC4FE00501D2C /* LaunchScreen.storyboard */,
-				CBA86C3E216FC4FE00501D2C /* Info.plist */,
+				CBA86C48216FC54100501D2C /* Model */,
+				CBA86C44216FC50C00501D2C /* Resources */,
+				CBA86C45216FC51800501D2C /* Controller */,
+				CBA86C46216FC52A00501D2C /* View */,
 			);
 			path = SecondIOSProject;
+			sourceTree = "<group>";
+		};
+		CBA86C44216FC50C00501D2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBA86C32216FC4FE00501D2C /* AppDelegate.swift */,
+				CBA86C39216FC4FE00501D2C /* Assets.xcassets */,
+				CBA86C3E216FC4FE00501D2C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBA86C45216FC51800501D2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBA86C34216FC4FE00501D2C /* ColorChangeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBA86C46216FC52A00501D2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBA86C36216FC4FE00501D2C /* Main.storyboard */,
+				CBA86C3B216FC4FE00501D2C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA86C48216FC54100501D2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBA86C49216FC5D300501D2C /* ColorTool.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBA86C2E216FC4FE00501D2C /* SecondIOSProject */ = {
+		CBA86C2E216FC4FE00501D2C /* Color Changer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBA86C41216FC4FE00501D2C /* Build configuration list for PBXNativeTarget "SecondIOSProject" */;
+			buildConfigurationList = CBA86C41216FC4FE00501D2C /* Build configuration list for PBXNativeTarget "Color Changer" */;
 			buildPhases = (
 				CBA86C2B216FC4FE00501D2C /* Sources */,
 				CBA86C2C216FC4FE00501D2C /* Frameworks */,
@@ -79,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = SecondIOSProject;
+			name = "Color Changer";
 			productName = SecondIOSProject;
-			productReference = CBA86C2F216FC4FE00501D2C /* SecondIOSProject.app */;
+			productReference = CBA86C2F216FC4FE00501D2C /* Color Changer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBA86C2A216FC4FE00501D2C /* Build configuration list for PBXProject "SecondIOSProject" */;
+			buildConfigurationList = CBA86C2A216FC4FE00501D2C /* Build configuration list for PBXProject "Color Changer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBA86C2E216FC4FE00501D2C /* SecondIOSProject */,
+				CBA86C2E216FC4FE00501D2C /* Color Changer */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA86C35216FC4FE00501D2C /* ViewController.swift in Sources */,
+				CBA86C35216FC4FE00501D2C /* ColorChangeViewController.swift in Sources */,
+				CBA86C4A216FC5D300501D2C /* ColorTool.swift in Sources */,
 				CBA86C33216FC4FE00501D2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SecondIOSProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecondIOSProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SecondIOSProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecondIOSProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBA86C2A216FC4FE00501D2C /* Build configuration list for PBXProject "SecondIOSProject" */ = {
+		CBA86C2A216FC4FE00501D2C /* Build configuration list for PBXProject "Color Changer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBA86C3F216FC4FE00501D2C /* Debug */,
@@ -322,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBA86C41216FC4FE00501D2C /* Build configuration list for PBXNativeTarget "SecondIOSProject" */ = {
+		CBA86C41216FC4FE00501D2C /* Build configuration list for PBXNativeTarget "Color Changer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBA86C42216FC4FE00501D2C /* Debug */,
